@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+    <meta charset="UTF-8">
+    <title>Prova de artes2 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="LogoB.png" class="logo"></a>
+            
+        </header>
+        <div class="content">
+         <div class="textBox">
+            <h2><br><span></span></h2> 
+            <p>Prova de Artes, clique no folder</p>
+            <a>Aproveite</a>
+            </div>
+            <div class="imgBox">
+                <img src="prova B -banner02.jpg" class="banner01">
+        </div>
+        <ul class="thumb">
+            <li><img src="prova B -banner02.jpg" onclick="imgSlider('prova B -banner02.jpg');changeCircleColor('#ffb7d5')"></li>
+        </ul>
+        <ul class="sci">
+            
+        </ul>
+    </div></section>
+
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.banner01').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+
+</body></html>
